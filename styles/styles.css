@@ -1,15 +1,4 @@
-@media screen {
-    body {
-        width: 75%;
 
-    }
-}
-
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: sans-serif;
-}
 
 
 body {
@@ -25,18 +14,28 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    margin-top: 90px;
+    height: 25%;
+    margin-top: 20px;
 }
 
-#navbar {
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
+main {
+   height: 300px;
+   width: 800px;
+    background-color: white;
+    margin-bottom: 30px;
+
+}
+
+ul {
+    justify-items: flex-start;
+    list-style-type: none;
+
+}
+
+.selection {
+    margin: 15px;
+    width: 800px;
+
 }
 
 h1 {
@@ -46,10 +45,11 @@ h1 {
     Font-weight: bold;
     font-size: 50px;
 }
+
  h2 {
      font-family: Arial, Helvetica, sans-serif;
      color:black;
-     margin-top: 15px;;
+     margin-top: 10px;;
 
  }
 
@@ -62,9 +62,17 @@ h1 {
      border-width: 3px;
      background-color: white;
      border-radius: 25px;
-    padding: 15px;
-
+     padding: 15px;
  }
+
+ .villagersNav {
+    height: 100px;
+    width: 85%;
+    display: flex;
+    align-content: space-around;
+    justify-items: flex-start;
+    background-color: white;
+}
 
 #footer {
     width: 100vw;
@@ -72,10 +80,8 @@ h1 {
     background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
 
-.villagers {
-  
-}
+
 

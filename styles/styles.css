@@ -41,26 +41,27 @@ body {
 
 h1 {
     font-family: 'Spectral', serif;
-   
+    text-shadow: 2px 2px 8px #000000;
     color: white;
     Font-weight: bold;
     font-size: 50px;
 }
  h2 {
      font-family: 'Spectral', serif;
-     color:gray;
+     color:black;
+     margin-top: 15px;;
 
  }
 
- p {
+ .instructions {
      font-family: 'Spectral', serif;
-     color: gray;
+     color: black;
      margin: 20px;
      border-style:solid;
-     border-color:white;
+     border-color:#E39E2D;
      border-width: 5px;
      background-color: white;
-     border-radius: 50px;
+     border-radius: 25px;
     padding: 15px;
 
  }

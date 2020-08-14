@@ -1,87 +1,114 @@
-
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
 
 
 body {
     width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #70F5C4;
+    background-color: #70f5c4;
 }
 
 #welcome-section {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     flex-direction: column;
-    height: 25%;
-    margin-top: 20px;
-}
-
-main {
-   height: 300px;
-   width: 800px;
-    background-color: white;
-    margin-bottom: 30px;
-
-}
-
-ul {
-    justify-items: flex-start;
-    list-style-type: none;
-
-}
-
-.selection {
-    margin: 15px;
-    width: 800px;
-
+    height: 15vh;
+    width: 100vw;
 }
 
 h1 {
-    font-family: 'Spectral', serif;
-    text-shadow: 2px 2px 8px #000000;
-    color: white;
+    color: purple;
     Font-weight: bold;
     font-size: 50px;
 }
+h2 {
+    font-weight: lighter;
+    color: black;
+    font-size: 16px;
+}
+h3 {
+    font-weight: 800px;
+    color: green;
+}
 
- h2 {
-     font-family: Arial, Helvetica, sans-serif;
-     color:black;
-     margin-top: 10px;;
-
- }
-
- .instructions {
-     font-family: Arial, Helvetica, sans-serif;
-     color: black;
-     margin: 20px;
-     border-style:solid;
-     border-color:#E39E2D;
-     border-width: 3px;
-     background-color: white;
-     border-radius: 25px;
-     padding: 15px;
- }
-
- .villagersNav {
-    height: 100px;
-    width: 85%;
+main {
+    width: 100%;
+    height: 120vh;
     display: flex;
-    align-content: space-around;
-    justify-items: flex-start;
-    background-color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.villagersNav {
+    width: 85%;
+    height: 100px;
+    border: 3px solid green;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navList {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.selection {
+    width: 50%;
+    height: 300px;
+    border: 3px solid orange;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img {
+    border-radius: 25px;
+    height: 150px;
+    display: flex;
+}
+.villagerInfo {
+
+}
+h4 {
+    display: flex;
+    font-size: larger;
+}
+h5 {
+    display: flex;
+    font-size: large;
+    font-weight: 500;
+}
+p {
+    display: flex;
+    font-size: medium;
 }
 
 #footer {
     width: 100vw;
     height: 5vh;
-    background-color: white;
+    background-color: darkgray;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
-
-
-

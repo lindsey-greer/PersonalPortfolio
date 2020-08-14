@@ -3,21 +3,13 @@ import { villagers } from './data/villagers.js'
 const villagersNav = document.querySelector('.villagersNav')
 const navList = document.querySelector('.navList')
 const selection = document.querySelector('.selection')
+const villagerInfo = document.querySelector('.villagerInfo')
 
 
 function removeChildren(e) {
     while (e.firstChild) {
         e.removeChild(e.firstChild)
     }
-}
-
-function getLastNumber(url) {
-    let end = url.lastIndexOf('/')
-    let start = end - 2
-    if (url.charAt(start) === '/'){
-        start ++
-    }
-    return url.slice(start, end)
 }
 
 function populateVillagers(villagers){
@@ -31,7 +23,7 @@ function populateVillagers(villagers){
             let villagerName = e.target.textContent
             const foundVillager = villagers.find(villager => villager.name === villagerName)
             console.log(foundVillager)
-            populateVillagerView(foundVillager)
+            populateVillagerInfo(foundVillager)
         })
 
         villagerAnchor.appendChild(listItem)
@@ -40,24 +32,27 @@ function populateVillagers(villagers){
     villagersNav.appendChild(navList)
 }
 
-function populateVillagerView(villagerData){
+function populateVillagerInfo(villagerData){
     removeChildren(selection)
     let villagerImage = document.createElement('img')
+    villagerImage.src = `https://acnhapi.com/v1/images/villagers/${villagerData.id}`
+    selection.appendChild(villagerImage)
+
+    let villagerInfo = document.createElement('div')
+    villagerInfo.className = '.villagerInfo'
+    selection.appendChild(villagerInfo)
+
     let villagerName = document.createElement('h4')
     let villagerSaying = document.createElement('h5')
     let villagerHobby = document.createElement('p')
 
-    
-    villagerImage.src = `https://acnhapi.com/v1/images/villagers/${villagerData.id}`
     villagerName.textContent = villagerData.name
     villagerSaying.textContent = `"${villagerData.saying}"`
     villagerHobby.textContent = `Hobby: ${villagerData.hobby}`
 
-    selection.appendChild(villagerImage)
-    selection.appendChild(villagerName)
-    selection.appendChild(villagerSaying)
-    selection.appendChild(villagerHobby)
+    villagerInfo.appendChild(villagerName)
+    villagerInfo.appendChild(villagerSaying)
+    villagerInfo.appendChild(villagerHobby)
 }
 
 populateVillagers(villagers)
-

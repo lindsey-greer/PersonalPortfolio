@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
+    background-color: black;
 }
 
 #welcome-section {

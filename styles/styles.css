@@ -41,19 +41,29 @@ body {
 
 h1 {
     font-family: 'Spectral', serif;
-    position: fixed;
+   
     color: white;
     Font-weight: bold;
     font-size: 50px;
 }
-h2 {
-    padding-top: 75px;
-    font-weight: lighter;
-    color: yellow;
-    position: fixed;
-    font-size: 16px;
-}
+ h2 {
+     font-family: 'Spectral', serif;
+     color:gray;
 
+ }
+
+ p {
+     font-family: 'Spectral', serif;
+     color: gray;
+     margin: 20px;
+     border-style:solid;
+     border-color:white;
+     border-width: 5px;
+     background-color: white;
+     border-radius: 50px;
+    padding: 15px;
+
+ }
 
 #footer {
     width: 100vw;
